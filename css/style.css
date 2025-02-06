@@ -4313,11 +4313,24 @@ html.is-animating .mil-menu-frame {
 
 .brand-emblem-circle:hover {
   transform: scale(1.1);
-  box-shadow: 0 0 10px gray;
+  box-shadow: 0 0 0px 3px #54ea94;
+  cursor: pointer;
 }
 
 @media (max-width: 600px) {
   .logo-grid-master {
     grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@keyframes float-logo {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-2px);
+  }
+  100% {
+    transform: translateY(0);
   }
 }
